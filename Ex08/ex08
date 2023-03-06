@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+import sys
+
+lines = ""
+dico = {}
+for line in sys.stdin:
+    lines = line.rstrip('\n')
+    try:
+        dico[lines] += 1
+    except:
+        dico[lines] = 1
+
+top1 = 0
+top2 = 0
+top1_name = ""
+top2_name = ""
+
+for key,value in dico.items():
+    if value > top1:
+        if top1 > top2:
+            top2 = top1
+            top2_name = top1_name
+        top1 = value
+        top1_name = key
+        continue
+    if value > top2:
+        top2 = value
+        top2_name = key
+        
+print(top1_name + " " + top2_name)
