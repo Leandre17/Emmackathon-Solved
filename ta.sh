@@ -7,7 +7,7 @@ EXEC=$1
 MY_OUTPUT="./my_output"
 
 
-./$1 > $STUDENT_OUTPUT
-../$1 > $MY_OUTPUT
+../../$3/Ex0$2/$1 > $STUDENT_OUTPUT
+../Ex0$2/$1 > $MY_OUTPUT
 
 diff $STUDENT_OUTPUT $MY_OUTPUT
