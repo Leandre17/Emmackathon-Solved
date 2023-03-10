@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 EXEC=$1
 STUDENT_OUTPUT="./student_output"
 
