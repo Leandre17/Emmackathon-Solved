@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-INPUT=$(ls /var/jenkins_home/workspace/status/)
+INPUT=$(ls /var/jenkins_home/workspace/status/ | grep "Team")
 mkdir -p /var/jenkins_home/workspace/status/old/
 
 while IFS='\n' read -ra ADDR; do
