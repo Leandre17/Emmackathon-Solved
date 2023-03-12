@@ -19,3 +19,6 @@ chmod +x ./solution/Ex0$2/$1
 ./solution/Ex0$2/$1 > $MY_OUTPUT
 
 diff $STUDENT_OUTPUT $MY_OUTPUT
+
+#while IFS='\n' read -ra ADDR; do
+#done <<< "$ALL_CONTAINERS"
