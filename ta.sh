@@ -8,7 +8,7 @@ STUDENT_OUTPUT="./student_output"
 EXEC=$1
 MY_OUTPUT="./my_output"
 
-INPUT=$(ls sujet/Ex0$2/ | grep "input" | cut -c 5-)
+INPUT=$(ls sujet/Ex0$2/ | grep "input" | cut -c 6-8)
 
 echo "input = $INPUT"
 
