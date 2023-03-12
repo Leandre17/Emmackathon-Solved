@@ -8,10 +8,9 @@ STUDENT_OUTPUT="./student_output"
 EXEC=$1
 MY_OUTPUT="./my_output"
 
-ls
-ls "$3/Ex0$2/"
-ls "Ex0$2/"
-ls solution
+INPUT=$(ls solution/Ex0$2/ | grep "input")
+
+echo "input = $INPUT"
 
 chmod +x ./$3/Ex0$2/$1
 chmod +x ./solution/Ex0$2/$1
