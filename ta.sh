@@ -6,7 +6,7 @@ MY_OUTPUT="./my_output"
 TEST_NUMBER=1
 INPUT=$(ls sujet/Ex0$2/ | grep "input" | cut -c 6-)
 
-if [ $(ls ./$3/Ex0$2/$1 | -wc -l) -eq 0 ]; then 
+if [ $(ls ./$3/Ex0$2/$1 | wc -l) -eq 0 ]; then 
     echo -e "\nDelivery error :(\n"
     exit 1
 fi
