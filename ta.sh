@@ -8,6 +8,7 @@ INPUT=$(ls sujet/Ex0$2/ | grep "input" | cut -c 6-)
 STATUS="/var/jenkins_home/workspace/status/$4"
 if [ $(ls ./$3/Ex0$2/$1 | wc -l) -eq 0 ]; then 
     echo -e "\nDelivery error :(\n"
+    echo "ex0$2 Délivery error :|" >> $STATUS
     exit 1
 fi
 
