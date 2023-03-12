@@ -25,6 +25,7 @@ while IFS='\n' read -ra ADDR; do
         echo -e "TEST $TEST_NUMBER FAILLED:"
         diff $STUDENT_OUTPUT $MY_OUTPUT
         exit 84;
+    fi;
     TEST_NUMBER=$((TEST_NUMBER + 1))
 done <<< "$INPUT"
 
